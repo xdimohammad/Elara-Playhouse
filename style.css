@@ -1,3 +1,4 @@
+
 /* =========================================
    ELARA PLAYHOUSE
    DREAMY PASTEL DESIGN
@@ -73,13 +74,28 @@ section {
   gap: 20px;
 }
 
+/* Official header logo */
+
 .brand {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: auto;
   line-height: 1;
   color: var(--text);
-  flex-shrink: 0;
 }
+
+.header-logo {
+  display: block;
+  width: 170px;
+  height: 58px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Footer text logo */
 
 .brand span {
   font-family: 'Playfair Display', serif;
@@ -121,6 +137,8 @@ section {
   font-size: 13px;
   font-weight: 900;
   transition: 0.25s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .account-button:hover {
@@ -325,8 +343,7 @@ section {
 
 .games-section {
   padding: 105px 7%;
-  background:
-    linear-gradient(180deg, #F9E5EB 0%, #FFF9F0 100%);
+  background: linear-gradient(180deg, #F9E5EB 0%, #FFF9F0 100%);
 }
 
 .games-grid {
@@ -336,8 +353,6 @@ section {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
-
-/* Game card */
 
 .game-card {
   background: #FFFFFF;
@@ -568,6 +583,8 @@ section {
 .footer-brand {
   width: fit-content;
   margin: 0 auto 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-footer > p {
@@ -607,6 +624,12 @@ section {
 
   .header-inner {
     padding: 12px 20px;
+    gap: 14px;
+  }
+
+  .header-logo {
+    width: 145px;
+    height: 55px;
   }
 
   .desktop-nav {
@@ -634,33 +657,33 @@ section {
 @media (max-width: 600px) {
 
   .header-inner {
-    min-height: 72px;
-    padding: 12px 16px;
-    gap: 10px;
+    min-height: auto;
+    padding: 10px 16px;
+    gap: 8px;
+    flex-wrap: wrap;
   }
 
-  .brand span {
-    font-size: 19px;
-    letter-spacing: 2px;
-  }
-
-  .brand small {
-    font-size: 8px;
-    letter-spacing: 4px;
-  }
-
-  .desktop-nav {
-    gap: 12px;
-  }
-
-  .nav-link {
-    font-size: 10px;
+  .header-logo {
+    width: 125px;
+    height: 48px;
   }
 
   .account-button {
-    padding: 10px 12px;
+    padding: 10px 13px;
     font-size: 10px;
-    white-space: nowrap;
+    margin-left: auto;
+  }
+
+  .desktop-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+    padding: 8px 0 5px;
+  }
+
+  .nav-link {
+    font-size: 11px;
   }
 
   .hero-section {
@@ -786,23 +809,26 @@ section {
 @media (max-width: 380px) {
 
   .header-inner {
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
-  .brand {
-    margin-right: auto;
+  .header-logo {
+    width: 110px;
+    height: 44px;
   }
 
   .desktop-nav {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    padding: 8px 0 3px;
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 10px;
   }
 
   .account-button {
-    margin-left: auto;
+    padding: 9px 11px;
+    font-size: 9px;
   }
 
   .games-grid {
@@ -820,52 +846,9 @@ section {
   .game-image {
     height: 115px;
   }
-/* OFFICIAL ELARA PLAYHOUSE HEADER LOGO */
-.header-logo {
-  display: block;
-  width: 190px;
-  height: auto;
-  max-height: 75px;
-  object-fit: contain;
-}
+
   .game-image span {
     font-size: 26px;
   }
 
-}
-/* =========================================
-   ELARA PLAYHOUSE - OFFICIAL HEADER LOGO
-========================================= */
-
-.brand {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  width: auto;
-}
-
-.header-logo {
-  display: block;
-  width: 170px;
-  height: 58px;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: left center;
-}
-
-/* TABLET */
-@media (max-width: 900px) {
-  .header-logo {
-    width: 145px;
-    height: 55px;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .header-logo {
-    width: 115px;
-    height: 48px;
-  }
 }

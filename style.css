@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -46,7 +46,7 @@ button {
 }
 
 section {
-  scroll-margin-top: 85px;
+  scroll-margin-top: 110px;
 }
 
 /* =========================================
@@ -58,7 +58,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255, 249, 240, 0.94);
+  background: rgba(255, 249, 240, 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(180, 155, 190, 0.12);
 }
@@ -66,15 +66,13 @@ section {
 .header-inner {
   max-width: 1180px;
   margin: auto;
-  min-height: 82px;
-  padding: 12px 28px;
+  min-height: 106px;
+  padding: 8px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-
-/* Official header logo */
 
 .brand {
   display: flex;
@@ -86,16 +84,16 @@ section {
   color: var(--text);
 }
 
+/* LARGE OFFICIAL LOGO */
+
 .header-logo {
   display: block;
-  width: 170px;
-  height: 58px;
+  width: 240px;
+  height: 90px;
   max-width: 100%;
   object-fit: contain;
   object-position: left center;
 }
-
-/* Footer text logo */
 
 .brand span {
   font-family: 'Playfair Display', serif;
@@ -378,6 +376,14 @@ section {
   overflow: hidden;
 }
 
+.game-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+
 .game-image span {
   font-size: clamp(36px, 4vw, 55px);
   filter: drop-shadow(0 7px 7px rgba(100, 80, 110, 0.10));
@@ -623,13 +629,14 @@ section {
 @media (max-width: 900px) {
 
   .header-inner {
-    padding: 12px 20px;
+    min-height: 98px;
+    padding: 8px 20px;
     gap: 14px;
   }
 
   .header-logo {
-    width: 145px;
-    height: 55px;
+    width: 210px;
+    height: 82px;
   }
 
   .desktop-nav {
@@ -658,14 +665,14 @@ section {
 
   .header-inner {
     min-height: auto;
-    padding: 10px 16px;
+    padding: 8px 16px;
     gap: 8px;
     flex-wrap: wrap;
   }
 
   .header-logo {
-    width: 125px;
-    height: 48px;
+    width: 170px;
+    height: 68px;
   }
 
   .account-button {
@@ -814,8 +821,8 @@ section {
   }
 
   .header-logo {
-    width: 110px;
-    height: 44px;
+    width: 150px;
+    height: 60px;
   }
 
   .desktop-nav {

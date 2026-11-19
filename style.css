@@ -820,7 +820,14 @@ section {
   .game-image {
     height: 115px;
   }
-
+/* OFFICIAL ELARA PLAYHOUSE HEADER LOGO */
+.header-logo {
+  display: block;
+  width: 190px;
+  height: auto;
+  max-height: 75px;
+  object-fit: contain;
+}
   .game-image span {
     font-size: 26px;
   }

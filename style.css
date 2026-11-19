@@ -833,3 +833,39 @@ section {
   }
 
 }
+/* =========================================
+   ELARA PLAYHOUSE - OFFICIAL HEADER LOGO
+========================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: auto;
+}
+
+.header-logo {
+  display: block;
+  width: 170px;
+  height: 58px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .header-logo {
+    width: 145px;
+    height: 55px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .header-logo {
+    width: 115px;
+    height: 48px;
+  }
+}

@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+  scroll-padding-top: 150px;
 }
 
 body {
@@ -46,7 +46,7 @@ button {
 }
 
 section {
-  scroll-margin-top: 110px;
+  scroll-margin-top: 150px;
 }
 
 /* =========================================
@@ -66,8 +66,8 @@ section {
 .header-inner {
   max-width: 1180px;
   margin: auto;
-  min-height: 106px;
-  padding: 8px 28px;
+  min-height: 150px;
+  padding: 10px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,16 +84,18 @@ section {
   color: var(--text);
 }
 
-/* LARGE OFFICIAL LOGO */
+/* OFFICIAL ELARA PLAYHOUSE LOGO */
 
 .header-logo {
   display: block;
-  width: 240px;
-  height: 90px;
+  width: 250px;
+  height: 130px;
   max-width: 100%;
   object-fit: contain;
   object-position: left center;
 }
+
+/* Footer text logo */
 
 .brand span {
   font-family: 'Playfair Display', serif;
@@ -629,14 +631,14 @@ section {
 @media (max-width: 900px) {
 
   .header-inner {
-    min-height: 98px;
+    min-height: 110px;
     padding: 8px 20px;
     gap: 14px;
   }
 
   .header-logo {
     width: 210px;
-    height: 82px;
+    height: 90px;
   }
 
   .desktop-nav {

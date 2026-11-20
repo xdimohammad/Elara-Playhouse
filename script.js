@@ -1,35 +1,24 @@
+
 // ELARA PLAYHOUSE — WEBSITE INTERACTIONS
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  // Smooth scrolling for navigation links
+  // Smooth scrolling for all internal navigation links
   document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function (event) {
-      const target = document.querySelector(this.getAttribute("href"));
+    link.addEventListener("click", event => {
+      const targetId = link.getAttribute("href");
+      const target = document.querySelector(targetId);
 
-      if (target) {
-        event.preventDefault();
+      if (!target) return;
 
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-    });
-  });
+      event.preventDefault();
 
-  // Explore Our Games button
-  const exploreButton = document.querySelector(
-    '.hero a[href="#games"], a[href="#games"].btn'
-  );
-
-  if (exploreButton) {
-    exploreButton.addEventListener("click", () => {
-      document.querySelector("#games")?.scrollIntoView({
-        behavior: "smooth"
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
       });
     });
-  }
+  });
 
   // Footer year
   const yearElement = document.querySelector("#currentYear");
